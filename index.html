@@ -7,11 +7,42 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/mobile.css">
 	<link rel="stylesheet" href="assets/css/variaveis.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
 
 </head>
 <body>
 	
-	
+	<header>
+		<div class="content-width">	
+			<div class="header-menu flex f-c-b">
+				<span class="menu-logo">Naped</span>
+				<div class="menu-navbar flex f-c-c">
+					
+					<nav class="navbar">
+						<a href="#" class="active">Home</a>
+						<a href="#">Séries</a>
+						<a href="#">Filmes</a>
+						<a href="#">Animes</a>
+						<a href="#">Games</a>
+					</nav>
+					
+					<a href="#" class="btn-minha_conta">Minha conta</a>
+					<div class="menu-btn"><i class='bx bx-menu'></i></div>
+				</div>
+			</div>
+		</div>
+	</header>
 
+<script>
+	
+	const menuBtn = document.querySelector('.menu-btn');
+	const navbar = document.querySelector('.navbar');
+
+	menuBtn.onclick = () =>
+	{
+		navbar.classList.toggle('active');
+	}
+
+</script>
 </body>
 </html>

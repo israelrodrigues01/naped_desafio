@@ -52,3 +52,10 @@
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 40px;
 }
+
+.title
+{
+	font-family: var(--font-title);
+	font-size: var(--size-title);
+	font-weight: 400;
+}
