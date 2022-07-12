@@ -6,15 +6,25 @@
 	}
 }
 
-@media (max-width: 720px)
+@media (max-width: 980px)
+{
+	main aside
+	{
+		display: none;
+	}
+}
+
+
+@media (max-width: 750px)
 {
 	.menu-navbar .navbar
 	{
 		position: absolute;
-		top: 150%; left: 0; width: 100%;
+		top: 100%; left: 0; width: 100%;
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 		transition: clip-path .5s ease-in-out;
 		background: var(--dark);
+		z-index: 1;
 	}
 	.menu-navbar .navbar.active
 	{
@@ -25,6 +35,7 @@
 		position: relative;
 		display: block; 
 		margin: 0 0 20px 4px;
+		padding-left: 10px;
 	}
 	.menu-navbar .navbar a:before
 	{
@@ -48,4 +59,13 @@
 		left: 0; top: 100%; 
 		text-align: center;
 	}
+
+	.card-principal .cards-text{ font-size: 1.3rem;	}
+
+	.card-noticia{ flex-direction: column; }
+}
+
+@media (max-width: 400px)
+{
+	.card-principal .cards-text{ font-size: 1rem; }
 }
